@@ -55,6 +55,7 @@ class Campaign(Model):
     _valid_properties = {
         'id': None,
         'name': None,
+        'type': None,
         'created_date': datetime.now(tzlocal()),
         'launch_date': datetime.now(tzlocal()),
         'send_by_date': None,
@@ -211,6 +212,7 @@ class Result(Model):
         'first_name': None,
         'last_name': None,
         'email': None,
+        'phone_number': None,
         'position': None,
         'ip': None,
         'latitude': None,
